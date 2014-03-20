@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Handyman Matters Twin Cities</title> 
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<meta name="KEYWORDS" content="" />
+<meta name="DESCRIPTION" content="" />
+<meta content='True' name='HandheldFriendly' />
+<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+<meta name="viewport" content="width=device-width" />
+
+<!-- CSS -->
+<link type="text/css" rel="stylesheet" href="css/jquery.mobile.structure-1.3.0.min.css" />
+<link type="text/css" rel="stylesheet" href="css/custom-theme.css" />
+<link type="text/css" rel="stylesheet" href="css/jquery-mobile-fluid960.min.css" />
+<link type="text/css" rel="stylesheet" href="css/colorbox.css" />
+<link type="text/css" rel="stylesheet" href="css/pwi.css" />
+<link type="text/css" rel="stylesheet" href="css/app-platform.css" />
+
+<!-- ADD SCRIPTS -->
+
+<!-- Add jQuery / Mobile -->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/jquery.pwi.js"></script>
+<script type="text/javascript" src="js/app-platform.js"></script>
+                
+<!-- Add PhoneGap -->
+<script type="text/javascript" src="phonegap.js"></script>
+
+<!-- Slideshow -->
+<link rel="stylesheet" href="slideshow/flexslider.css" type="text/css">
+<script type="text/javascript" src="slideshow/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+<!-- /Slideshow -->
+</head> 
+
+<body>
+
+<!-- Home -->
+<div data-role="page" data-theme="a" id="home"> 
+    <div data-role="header" data-theme="a" class="center">
+        <img src="img/logo.png" class="img" style="padding: 10px 0;" alt="logo">
+    </div><!-- /header -->
+     
+<div data-role="content">
+    
+    <!-- Help Popup-->
+    <div data-role="popup" id="help" data-overlay-theme="b" data-theme="a" style="max-width:500px;" class="ui-corner-all">
+        <div data-role="header" data-theme="a" class="center">
+            <img src="img/logo2.png">
+        </div>
+    
+        <div data-role="content" class="help">	
+            <h2>How does this work?</h2>
+            <p><strong>Send a referral</strong><br>
+            Tap the &quot;Email Referral&quot; button and enter the email address of the person you want to refer into the &quot;Referral Email&quot; field, enter your name into the &quot;Your Name&quot; field and if you would like to include any other information enter it into the &quot;Message&quot; field. Once you are done tap the &quot;Submit&quot; button and an email will be sent to the email address provided. An email alert will also be sent to 
+            <!---->Handyman Matters for tracking purposes.</p>
+            <p><strong>Send this app</strong><br>
+            Tap the &quot;Send this app&quot; button and enter the email address of the person you want to send the app into the &quot;Email&quot; field and enter your name into the &quot;Your Name&quot; field. Once you are done tap the &quot;Submit&quot; button and an email will a link to the apps Landing Page be sent to the email address provided. An email alert will also be sent to 
+            <!---->Handyman Matters for tracking purposes.</p>
+    		<p><strong>Get Your Own App</strong><br>
+   		    Tap the &quot;Get your own app!&quot; button and enter the email address of the person interested in getting more information about apps from App-Platform.net in the &quot;Email&quot; field. Once you are done tap the &quot;Submit&quot; button and a representative of App-Platform.net will be in touch.</p>
+        	<p><strong>Learn more</strong><br>
+            Go to <a target="_blank" onClick="window.open('http://app-platform.net', '_system', 'location=yes');">App-Platform.net</a> to learn more about this app and others.</p>
+        </div>
+        
+        <div data-role="footer" class="center">
+            <a href="#" data-role="button" data-inline="true" data-theme="a" data-rel="back" data-icon="delete" style="margin-top:10px; margin-bottom:10px;">Close Window</a>
+        </div>
+    </div><!-- /help popup -->
+    
+<!-- Slideshow --> 
+    <div class="flexslider" style="max-width:770px; margin-left:auto; margin-right:auto;">
+      <ul class="slides">
+        <li>
+          <img src="slideshow/slides/slide-01.png" />
+          <p class="flex-caption">Call now for a Free Bath Remodel Estimate</p>
+        </li>
+        <li>
+          <img src="slideshow/slides/slide-02.png" />
+          <p class="flex-caption">Expert Carpenters - Interior or Exterior Projects</p>
+        </li>
+        <li>
+          <img src="slideshow/slides/slide-03.png" />
+          <p class="flex-caption">Let US take care of those Honey Do projects</p>
+        </li>
+        <li>
+          <img src="slideshow/slides/slide-04.png" />
+          <p class="flex-caption">Decks repaired, rebuilt or new installations</p>
+        </li>
+        <li>
+          <img src="slideshow/slides/slide-05.png" />
+          <p class="flex-caption">Welcome to Handyman Matters Twin Cities</p>
+        </li>
+      </ul>
+    </div>
+<!-- /Slideshow -->
+
+    <h1 class="center"><a id="body" href="tel:952-836-6326">(952) 836-6326</a></h1>
+    
+<div class="container_12">
+    <div class="grid_5 ui-block960-a">
+    
+        <p class="center">
+        <a id="body" href="#help" data-rel="popup" data-position-to="window" data-transition="pop">How does this work?</a><br />
+        </p>
+
+        <!-- Email referral -->
+        <a id="emailRefBtn" href="" target="_blank" data-role="button" data-icon="email">Email Referral</a>
+        <form id="emailReferral" class="emailReferral" method="post" data-ajax="false" style="display:none; padding-left:10px; padding-right:10px; padding-bottom:20px;">
+        <div id="emailReferralSending" style="display:none;">
+            <h2>Sending...</h2>
+            <small>This may take a few moments depending on your data connection.</small>
+        </div>
+        <div id="emailReferralOpen">
+        <div data-role="fieldcontain" class="ui-hide-label">
+          <label for="Email">Referral Email</label>
+          <input type="text" name="Email" id="Email" value="" placeholder="Referral Email" class="required email" data-mini="true" />
+        </div>
+        <div data-role="fieldcontain" class="ui-hide-label">
+          <label for="Name">Your Name</label>
+          <input type="text" name="Name" id="Name" value="" placeholder="Your Name" data-mini="true" class="required" />
+        </div>
+        <label for="Message"><span class="smallText">Message (optional)</span></label>
+        <textarea name="Message" id="Message" style="background:#ffffff;" data-mini="true"></textarea>
+        
+        <div data-role="controlgroup" data-type="horizontal" style="margin-left:-10px;">
+        <input type="submit" id="post_submit" name="submit" value="Submit" class="submit-value" data-inline="true" data-mini="true" data-icon="check" data-theme="b" />
+        <a href="#help" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop" data-mini="true" data-icon="alert" data-theme="b">Help</a>
+        <a id="emailRefReset" href="" data-role="button" data-inline="true" data-mini="true" data-icon="delete" data-theme="b">Clear</a>
+        </div>
+        </div>
+        </form><!-- /email referral -->
+        
+        <!-- Send this app -->
+        <a id="sendAppBtn" href="" target="_blank" data-role="button" data-icon="email">Send this app</a>
+        <form id="sendApp" class="sendApp" method="post" data-ajax="false" style="display:none; padding-left:10px; padding-right:10px; padding-bottom:20px;">
+        <div id="sendAppSending" style="display:none;">
+            <h2>Sending...</h2>
+            <small>This may take a few moments depending on your data connection.</small>
+        </div>
+        <div id="sendAppOpen">
+        <div data-role="fieldcontain" class="ui-hide-label">
+          <label for="Email">Email</label>
+          <input type="text" name="Email" id="Email" value="" placeholder="Email" class="required email" data-mini="true" />
+        </div>
+        <div data-role="fieldcontain" class="ui-hide-label">
+          <label for="Name">Your Name</label>
+          <input type="text" name="Name" id="Name" value="" placeholder="Your Name" data-mini="true" class="required" />
+        </div>
+        
+        <div data-role="controlgroup" data-type="horizontal" style="margin-left:-10px;">
+        <input type="submit" id="post_submit" name="submit" value="Submit" class="submit-value" data-inline="true" data-mini="true" data-icon="check" data-theme="b" />
+        <a href="#help" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop" data-mini="true" data-icon="alert" data-theme="b">Help</a>
+        <a id="sendAppReset" href="" data-role="button" data-inline="true" data-mini="true" data-icon="delete" data-theme="b">Clear</a>
+        </div>
+        </div>
+        </form><!-- /send this app -->
+        <br />
+    	<p><strong>Social Media</strong></p>
+        <a data-role="button" data-icon="facebook" target="_blank" onClick="window.open('https://www.facebook.com/pages/Handyman-Matters-Twin-Cities/167059289983674', '_system', 'location=yes');">facebook</a>
+        <a data-role="button" data-icon="linkedin" target="_blank" onClick="window.open('http://www.linkedin.com/profile/view?id=48535212', '_system', 'location=yes');">linkedIn</a>
+        <br />
+	</div><!-- /block a -->      
+    <div class="grid_7 ui-block960-b">
+    	<p><strong>Contact Mike Sitek</strong></p>
+        <a href="tel:952-836-6326" data-role="button" data-icon="phone">(952) 836-6326</a>
+        <a href="mailto:mike.sitek@handymanmatters.com" target="_blank" data-icon="email" data-role="button">mike.sitek@handymanmatters.com</a>
+        <a data-role="button" data-icon="info" target="_blank" onClick="window.open('http://handymanmatters.com/twin-cities', '_system', 'location=yes');">handymanmatters.com/twin-cities</a>
+        <p><strong>Location:</strong><br />
+        6224 Halifax Avenue South<br />
+        Edina,  MN 55424</p>
+	</div><!-- /block b -->       
+</div><!-- /container -->     
+</div><!-- /content -->
+    
+<div data-role="footer" data-theme="a">
+    <div class="footerText">
+        <!-- Get your own app -->
+        <a id="getYourOwnAppBtn" href="" target="_blank" data-role="button" data-theme="a" data-inline="true" data-icon="email">Get your own app!</a>
+        <form id="getYourOwnApp" class="getYourOwnApp" method="post" data-ajax="false" style="display:none;">
+        <div id="getYourOwnAppSending" style="display:none;">
+            <h2>Sending...</h2>
+            <small>This may take a few moments depending on your data connection.</small>
+        </div>
+        <div id="getYourOwnAppOpen" style="margin-left:auto; margin-right:auto; max-width:250px; margin-top:-10px;">
+            <div data-role="fieldcontain" class="ui-hide-label">
+              <label for="Email">Email</label>
+              <input type="text" name="Email" id="Email" value="" placeholder="Email" class="required email" data-mini="true" />
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+            <input type="submit" id="post_submit" name="submit" value="Submit" class="submit-value" data-inline="true" data-mini="true" data-icon="check" data-theme="b" />
+            <a id="getYourOwnAppReset" href="" data-role="button" data-inline="true" data-mini="true" data-icon="delete" data-theme="b">Clear</a>
+            </div>
+        </div>
+        </form><!-- /get your own app -->
+        <div style="clear:both"></div>
+        <p><script type="text/javascript"> 
+            copyright=new Date(); update=copyright.getFullYear(); document.write("Copyright &copy; "+ update + " Handyman Matters");
+        </script></p>
+   </div>
+</div><!-- /footer -->
+</div><!-- /home -->
+
+<!-- Bump Headers -->
+<script>
+$(".grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12").find("p").css("margin-left", "10px");
+</script>
+
+<!-- Email Referral Validation -->
+<script type="text/javascript">
+$(function() {
+    $( "#emailReferral" ).validate({
+        submitHandler: function(form) {
+           var data= $(form).serialize()
+				$("#emailReferralOpen").fadeOut();
+				$("#emailReferralSending").fadeIn('slow');
+                $.ajax({
+                type: "POST",
+                url: "http://handymantwincities.app-platform.net/php/emailReferral.php",
+                data: data,
+                success: function(){
+                    $(form).fadeOut();
+					$("#emailReferralOpen").fadeIn();
+					$("#emailReferralSending").fadeOut();
+                }
+                });
+            return false;
+        }
+    });
+});     
+</script>
+
+<!-- Send App Validation -->
+<script type="text/javascript">
+$(function() {
+    $( "#sendApp" ).validate({
+        submitHandler: function(form) {
+           var data= $(form).serialize()
+				$("#sendAppOpen").fadeOut();
+				$("#sendAppSending").fadeIn('slow');
+                $.ajax({
+                type: "POST",
+                url: "http://handymantwincities.app-platform.net/php/sendApp.php",
+                data: data,
+                success: function(){
+                    $(form).fadeOut();
+					$("#sendAppOpen").fadeIn();
+					$("#sendAppSending").fadeOut();
+                }
+                });
+            return false;
+        }
+    });
+});     
+</script>
+
+<!-- Get Your Own App Validation -->
+<script type="text/javascript">
+$(function() {
+    $( "#getYourOwnApp" ).validate({
+        submitHandler: function(form) {
+           var data= $(form).serialize()
+				$("#getYourOwnAppOpen").fadeOut();
+				$("#getYourOwnAppSending").fadeIn('slow');
+                $.ajax({
+                type: "POST",
+                url: "http://handymantwincities.app-platform.net/php/getYourOwnApp.php",
+                data: data,
+                success: function(){
+                    $(form).fadeOut();
+					$("#getYourOwnAppOpen").fadeIn();
+					$("#getYourOwnAppSending").fadeOut();
+                }
+                });
+            return false;
+        }
+    });
+});     
+</script>
+
+<script>
+<!-- Email referral button -->
+$(function() {$("#emailRefBtn").toggle(function(){$("#emailReferral").show();},function(){$("#emailReferral").hide(); $("#emailReferral")[0].reset();});});
+$(function() {$('#emailRefReset').click( function() { $("#emailReferral")[0].reset(); });});
+
+<!-- Send App button -->
+$(function() {$("#sendAppBtn").toggle(function(){$("#sendApp").show();},function(){$("#sendApp").hide(); $("#sendApp")[0].reset();});});
+$(function() {$('#sendAppReset').click( function() { $("#sendApp")[0].reset(); });});
+
+<!-- Get Your Own App button -->
+$(function() {$("#getYourOwnAppBtn").toggle(function(){$("#getYourOwnApp").show();},function(){$("#getYourOwnApp").hide(); $("#getYourOwnApp")[0].reset();});});
+$(function() {$('#getYourOwnAppReset').click( function() { $("#getYourOwnApp")[0].reset(); });});
+</script>
+
+</body>
+</html>
